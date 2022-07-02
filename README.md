@@ -1,3 +1,3 @@
 # Spring-Pet-Clinic
 
-Basic pet clinic to devlop and show case Spring skills
+Basic pet clinic to develop and showcase Spring skills
