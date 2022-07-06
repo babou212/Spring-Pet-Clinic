@@ -16,6 +16,16 @@ public class VetServiceImpl implements VetService{
     }
 
     @Override
+    public void delete(Vet object) {
+
+    }
+
+    @Override
+    public void deleteById(Long aLong) {
+
+    }
+
+    @Override
     public Set<Vet> findAll() {
         return null;
     }

@@ -17,6 +17,16 @@ public class PetServiceImpl implements PetService{
     }
 
     @Override
+    public void delete(Pet object) {
+
+    }
+
+    @Override
+    public void deleteById(Long aLong) {
+
+    }
+
+    @Override
     public Set<Pet> findAll() {
         return null;
     }
