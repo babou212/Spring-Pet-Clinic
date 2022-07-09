@@ -3,7 +3,6 @@ package com.example.springpetclinic.services;
 import com.example.springpetclinic.model.Owner;
 
 import java.util.Set;
-
 public class OwnerServiceImpl implements OwnerService {
     @Override
     public Owner findByLastName(String lastName) {
