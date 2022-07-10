@@ -1,9 +1,6 @@
 package com.example.springpetclinic.model;
 
-import lombok.Data;
-
 import java.time.LocalDate;
-
 
 public class Pet extends BaseEntity {
     private PetType petType;
