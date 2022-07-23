@@ -98,6 +98,8 @@ public class DataLoader implements CommandLineRunner {
         vet1.setLastName("DoLittle");
         vet1.getSpecialities().add(savedRadiology);
 
+        vetService.save(vet1);
+
         Vet vet2 = new Vet();
         vet2.setFirstName("David");
         vet2.setLastName("Attenborough");
