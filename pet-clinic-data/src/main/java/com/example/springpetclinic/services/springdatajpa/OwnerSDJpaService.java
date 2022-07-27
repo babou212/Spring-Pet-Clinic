@@ -2,8 +2,6 @@ package com.example.springpetclinic.services.springdatajpa;
 
 import com.example.springpetclinic.model.Owner;
 import com.example.springpetclinic.repsoitories.OwnerRepo;
-import com.example.springpetclinic.repsoitories.PetRepo;
-import com.example.springpetclinic.repsoitories.PetTypeRepo;
 import com.example.springpetclinic.services.OwnerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Primary;
@@ -19,8 +17,6 @@ import java.util.Set;
 @Primary
 public class OwnerSDJpaService implements OwnerService {
     private final OwnerRepo ownerRepo;
-    private final PetRepo petRepo;
-    private final PetTypeRepo petTypeRepo;
 
     @Override
     public Set<Owner> findAll() {
