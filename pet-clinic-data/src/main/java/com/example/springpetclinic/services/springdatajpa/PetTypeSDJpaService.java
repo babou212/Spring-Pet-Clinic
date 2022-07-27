@@ -1,8 +1,6 @@
 package com.example.springpetclinic.services.springdatajpa;
 
-import com.example.springpetclinic.model.Pet;
 import com.example.springpetclinic.model.PetType;
-import com.example.springpetclinic.model.Vet;
 import com.example.springpetclinic.repsoitories.PetTypeRepo;
 
 import com.example.springpetclinic.services.PetTypeService;
