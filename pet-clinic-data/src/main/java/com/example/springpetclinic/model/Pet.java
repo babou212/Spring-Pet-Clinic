@@ -1,7 +1,6 @@
 package com.example.springpetclinic.model;
 
 import javax.persistence.*;
-import javax.print.attribute.standard.MediaSize;
 import java.time.LocalDate;
 @Entity
 @Table(name = "pets")
