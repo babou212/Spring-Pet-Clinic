@@ -14,7 +14,6 @@ import java.util.Set;
 @RequiredArgsConstructor
 @Service
 @Profile("springdatajpa")
-@Primary
 public class OwnerSDJpaService implements OwnerService {
     private final OwnerRepo ownerRepo;
 

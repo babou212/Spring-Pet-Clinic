@@ -5,11 +5,15 @@ import com.example.springpetclinic.services.OwnerService;
 import com.example.springpetclinic.services.PetTypeService;
 import com.example.springpetclinic.services.SpecialtyService;
 import com.example.springpetclinic.services.VetService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
+@Slf4j
+@RequiredArgsConstructor
 @Component
 public class DataLoader implements CommandLineRunner {
 
@@ -17,14 +21,6 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialtyService specialtyService;
-
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
-                      SpecialtyService specialtyService) {
-        this.ownerService = ownerService;
-        this.vetService = vetService;
-        this.petTypeService = petTypeService;
-        this.specialtyService = specialtyService;
-    }
 
     @Override
     public void run(String... args) {
@@ -34,7 +30,6 @@ public class DataLoader implements CommandLineRunner {
         if (count == 0) {
             loadData();
         }
-
     }
 
     private void loadData() {
@@ -80,7 +75,7 @@ public class DataLoader implements CommandLineRunner {
         owner2.setLastName("Ross");
         owner2.setAddress("420 hemp alley");
         owner2.setCity("surrey");
-        owner2.setCity("07344534669");
+        owner2.setTelephone("07344534669");
 
         Pet bobsPet = new Pet();
         bobsPet.setPetType(savedCatPetType);

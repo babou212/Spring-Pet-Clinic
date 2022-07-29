@@ -4,7 +4,6 @@ import com.example.springpetclinic.model.Speciality;
 import com.example.springpetclinic.repsoitories.SpecialityRepo;
 import com.example.springpetclinic.services.SpecialtyService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +13,6 @@ import java.util.Set;
 @RequiredArgsConstructor
 @Service
 @Profile("springdatajpa")
-@Primary
 public class SpecialitySDJpaService implements SpecialtyService {
     private final SpecialityRepo specialityRepo;
 

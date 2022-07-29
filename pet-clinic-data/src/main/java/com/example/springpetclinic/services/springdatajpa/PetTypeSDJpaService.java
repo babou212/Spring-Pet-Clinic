@@ -5,7 +5,6 @@ import com.example.springpetclinic.repsoitories.PetTypeRepo;
 
 import com.example.springpetclinic.services.PetTypeService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +14,6 @@ import java.util.Set;
 @RequiredArgsConstructor
 @Service
 @Profile("springdatajpa")
-@Primary
 public class PetTypeSDJpaService  implements PetTypeService {
     private final PetTypeRepo petTypeRepo;
 
