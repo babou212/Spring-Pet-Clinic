@@ -4,7 +4,6 @@ import com.example.springpetclinic.model.Pet;
 import com.example.springpetclinic.repsoitories.PetRepo;
 import com.example.springpetclinic.services.PetService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
