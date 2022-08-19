@@ -8,6 +8,8 @@ Full stack pet clinic app to develop and showcase Spring skills
 
 **Server:** Spring Boot, h2db
 
+**Build Tool:** Maven 
+
 **Security:**  CodeQl
 
 ## Features
